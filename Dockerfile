@@ -1,9 +1,9 @@
-FROM node:18-alpine
+FROM node:20-alpine
 LABEL authors="Hanriel"
 
 WORKDIR /user/src/app
 
-COPY /server .
+COPY . .
 
 RUN npm ci --omit=dev
 
