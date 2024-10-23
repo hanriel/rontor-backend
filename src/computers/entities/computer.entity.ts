@@ -112,5 +112,30 @@ export class ComputerEntity {
   @Column({
     default: '',
   })
+  eth_mac: string;
+
+  @Column({
+    default: '-',
+  })
+  wifi_mac: string;
+
+  @Column({
+    default: 0,
+  })
+  ip_reserv: number;
+
+  @Column({
+    default: false,
+  })
+  security_soft: boolean;
+
+  @Column({
+    default: '',
+  })
+  vipnet_license: string;
+
+  @Column({
+    default: '',
+  })
   photo: string;
 }
